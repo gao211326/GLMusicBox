@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC54DBD696A787C59D496FBB /* libPods-GLMusicBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 096951A67B44883052A5639A /* libPods-GLMusicBox.a */; };
+		EB2E17B31FA327F100F753F0 /* GLMusicPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2E17B21FA327F100F753F0 /* GLMusicPlayerControlView.m */; };
+		EB2E17B51FA32A4400F753F0 /* GLMusicPlayerControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2E17B41FA32A4400F753F0 /* GLMusicPlayerControlView.xib */; };
+		EB5AAF3A1F385E0E00A9CBAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5AAF391F385E0E00A9CBAC /* main.m */; };
+		EB5AAF3D1F385E0E00A9CBAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5AAF3C1F385E0E00A9CBAC /* AppDelegate.m */; };
+		EB5AAF401F385E0E00A9CBAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5AAF3F1F385E0E00A9CBAC /* ViewController.m */; };
+		EB5AAF431F385E0E00A9CBAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5AAF411F385E0E00A9CBAC /* Main.storyboard */; };
+		EB5AAF451F385E0E00A9CBAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5AAF441F385E0E00A9CBAC /* Assets.xcassets */; };
+		EB5AAF481F385E0E00A9CBAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5AAF461F385E0E00A9CBAC /* LaunchScreen.storyboard */; };
+		EBD0476E1FA707970079B261 /* NSString+translation.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD0476D1FA707970079B261 /* NSString+translation.m */; };
+		EBD17F361F99A9A900BC1356 /* GLMusicLrcLable.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD17F351F99A9A900BC1356 /* GLMusicLrcLable.m */; };
+		EBD17F391F99CCF700BC1356 /* GLSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD17F381F99CCF700BC1356 /* GLSlider.m */; };
+		EBD17F3E1F99D47B00BC1356 /* UIImage+GLProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD17F3C1F99D47B00BC1356 /* UIImage+GLProcessing.m */; };
+		EBD5AB171FB59DC6000A3955 /* GLMiniMusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD5AB161FB59DC6000A3955 /* GLMiniMusicView.m */; };
+		EBFE7FA01F9F2D6400070E8A /* GLMusicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE7F9F1F9F2D6400070E8A /* GLMusicPlayViewController.m */; };
+		EBFE7FA41F9F2FD800070E8A /* GLMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE7FA31F9F2FD800070E8A /* GLMusicPlayer.m */; };
+		EBFE7FA71FA180E900070E8A /* GLMusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE7FA61FA180E900070E8A /* GLMusicListViewController.m */; };
+		EBFE7FA91FA1BBCD00070E8A /* musiclist.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBFE7FA81FA1BBCD00070E8A /* musiclist.plist */; };
+		EBFE7FB01FA1BDC000070E8A /* 爱如潮水.lrc in Resources */ = {isa = PBXBuildFile; fileRef = EBFE7FAA1FA1BDC000070E8A /* 爱如潮水.lrc */; };
+		EBFE7FB11FA1BDC000070E8A /* 天使的翅膀.lrc in Resources */ = {isa = PBXBuildFile; fileRef = EBFE7FAB1FA1BDC000070E8A /* 天使的翅膀.lrc */; };
+		EBFE7FB21FA1BDC000070E8A /* 老人与海.lrc in Resources */ = {isa = PBXBuildFile; fileRef = EBFE7FAC1FA1BDC000070E8A /* 老人与海.lrc */; };
+		EBFE7FB31FA1BDC000070E8A /* 明天，你好.lrc in Resources */ = {isa = PBXBuildFile; fileRef = EBFE7FAD1FA1BDC000070E8A /* 明天，你好.lrc */; };
+		EBFE7FB41FA1BDC000070E8A /* 白狐.lrc in Resources */ = {isa = PBXBuildFile; fileRef = EBFE7FAE1FA1BDC000070E8A /* 白狐.lrc */; };
+		EBFE7FB51FA1BDC000070E8A /* 美丽的神话.lrc in Resources */ = {isa = PBXBuildFile; fileRef = EBFE7FAF1FA1BDC000070E8A /* 美丽的神话.lrc */; };
+		EBFE7FB81FA1C3A900070E8A /* GLMusicLRCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE7FB71FA1C3A900070E8A /* GLMusicLRCModel.m */; };
+		EBFE7FBC1FA1D13E00070E8A /* MusicLRCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE7FBA1FA1D13E00070E8A /* MusicLRCTableViewCell.m */; };
+		EBFE7FBD1FA1D13E00070E8A /* MusicLRCTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBFE7FBB1FA1D13E00070E8A /* MusicLRCTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		096951A67B44883052A5639A /* libPods-GLMusicBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GLMusicBox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56FDBEDC6F09A1240DA3E42C /* Pods-GLMusicBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLMusicBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLMusicBox/Pods-GLMusicBox.release.xcconfig"; sourceTree = "<group>"; };
+		C6161005F47DF5419D13EBB7 /* Pods-GLMusicBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLMusicBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLMusicBox/Pods-GLMusicBox.debug.xcconfig"; sourceTree = "<group>"; };
+		EB2E17B11FA327F100F753F0 /* GLMusicPlayerControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMusicPlayerControlView.h; sourceTree = "<group>"; };
+		EB2E17B21FA327F100F753F0 /* GLMusicPlayerControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLMusicPlayerControlView.m; sourceTree = "<group>"; };
+		EB2E17B41FA32A4400F753F0 /* GLMusicPlayerControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GLMusicPlayerControlView.xib; sourceTree = "<group>"; };
+		EB5AAF351F385E0E00A9CBAC /* GLMusicBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLMusicBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5AAF391F385E0E00A9CBAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB5AAF3B1F385E0E00A9CBAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB5AAF3C1F385E0E00A9CBAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB5AAF3E1F385E0E00A9CBAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EB5AAF3F1F385E0E00A9CBAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EB5AAF421F385E0E00A9CBAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB5AAF441F385E0E00A9CBAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB5AAF471F385E0E00A9CBAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB5AAF491F385E0E00A9CBAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD0476C1FA707970079B261 /* NSString+translation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+translation.h"; sourceTree = "<group>"; };
+		EBD0476D1FA707970079B261 /* NSString+translation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+translation.m"; sourceTree = "<group>"; };
+		EBD17F341F99A9A900BC1356 /* GLMusicLrcLable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMusicLrcLable.h; sourceTree = "<group>"; };
+		EBD17F351F99A9A900BC1356 /* GLMusicLrcLable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLMusicLrcLable.m; sourceTree = "<group>"; };
+		EBD17F371F99CCF700BC1356 /* GLSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLSlider.h; sourceTree = "<group>"; };
+		EBD17F381F99CCF700BC1356 /* GLSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLSlider.m; sourceTree = "<group>"; };
+		EBD17F3C1F99D47B00BC1356 /* UIImage+GLProcessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GLProcessing.m"; sourceTree = "<group>"; };
+		EBD17F3D1F99D47B00BC1356 /* UIImage+GLProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GLProcessing.h"; sourceTree = "<group>"; };
+		EBD5AB151FB59DC6000A3955 /* GLMiniMusicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMiniMusicView.h; sourceTree = "<group>"; };
+		EBD5AB161FB59DC6000A3955 /* GLMiniMusicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLMiniMusicView.m; sourceTree = "<group>"; };
+		EBFE7F981F9F287C00070E8A /* Function.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Function.h; sourceTree = "<group>"; };
+		EBFE7F991F9F287C00070E8A /* ColorDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorDefine.h; sourceTree = "<group>"; };
+		EBFE7F9A1F9F28A200070E8A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EBFE7F9E1F9F2D6400070E8A /* GLMusicPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMusicPlayViewController.h; sourceTree = "<group>"; };
+		EBFE7F9F1F9F2D6400070E8A /* GLMusicPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLMusicPlayViewController.m; sourceTree = "<group>"; };
+		EBFE7FA21F9F2FD800070E8A /* GLMusicPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMusicPlayer.h; sourceTree = "<group>"; };
+		EBFE7FA31F9F2FD800070E8A /* GLMusicPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLMusicPlayer.m; sourceTree = "<group>"; };
+		EBFE7FA51FA180E900070E8A /* GLMusicListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMusicListViewController.h; sourceTree = "<group>"; };
+		EBFE7FA61FA180E900070E8A /* GLMusicListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLMusicListViewController.m; sourceTree = "<group>"; };
+		EBFE7FA81FA1BBCD00070E8A /* musiclist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = musiclist.plist; sourceTree = "<group>"; };
+		EBFE7FAA1FA1BDC000070E8A /* 爱如潮水.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "爱如潮水.lrc"; sourceTree = "<group>"; };
+		EBFE7FAB1FA1BDC000070E8A /* 天使的翅膀.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "天使的翅膀.lrc"; sourceTree = "<group>"; };
+		EBFE7FAC1FA1BDC000070E8A /* 老人与海.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "老人与海.lrc"; sourceTree = "<group>"; };
+		EBFE7FAD1FA1BDC000070E8A /* 明天，你好.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "明天，你好.lrc"; sourceTree = "<group>"; };
+		EBFE7FAE1FA1BDC000070E8A /* 白狐.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "白狐.lrc"; sourceTree = "<group>"; };
+		EBFE7FAF1FA1BDC000070E8A /* 美丽的神话.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "美丽的神话.lrc"; sourceTree = "<group>"; };
+		EBFE7FB61FA1C3A900070E8A /* GLMusicLRCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMusicLRCModel.h; sourceTree = "<group>"; };
+		EBFE7FB71FA1C3A900070E8A /* GLMusicLRCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLMusicLRCModel.m; sourceTree = "<group>"; };
+		EBFE7FB91FA1D13E00070E8A /* MusicLRCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicLRCTableViewCell.h; sourceTree = "<group>"; };
+		EBFE7FBA1FA1D13E00070E8A /* MusicLRCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicLRCTableViewCell.m; sourceTree = "<group>"; };
+		EBFE7FBB1FA1D13E00070E8A /* MusicLRCTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicLRCTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB5AAF321F385E0E00A9CBAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC54DBD696A787C59D496FBB /* libPods-GLMusicBox.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30B78B28636BCCC8D094DF96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6161005F47DF5419D13EBB7 /* Pods-GLMusicBox.debug.xcconfig */,
+				56FDBEDC6F09A1240DA3E42C /* Pods-GLMusicBox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80110F244BB5B862567DC604 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				096951A67B44883052A5639A /* libPods-GLMusicBox.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB5AAF2C1F385E0E00A9CBAC = {
+			isa = PBXGroup;
+			children = (
+				EB5AAF371F385E0E00A9CBAC /* GLMusicBox */,
+				EB5AAF361F385E0E00A9CBAC /* Products */,
+				30B78B28636BCCC8D094DF96 /* Pods */,
+				80110F244BB5B862567DC604 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB5AAF361F385E0E00A9CBAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB5AAF351F385E0E00A9CBAC /* GLMusicBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB5AAF371F385E0E00A9CBAC /* GLMusicBox */ = {
+			isa = PBXGroup;
+			children = (
+				EBFE7F971F9F274200070E8A /* Resources */,
+				EBFE7F911F9F265700070E8A /* Modules */,
+				EBD17F3B1F99D44100BC1356 /* Category */,
+				EB5AAF3B1F385E0E00A9CBAC /* AppDelegate.h */,
+				EB5AAF3C1F385E0E00A9CBAC /* AppDelegate.m */,
+				EB5AAF3E1F385E0E00A9CBAC /* ViewController.h */,
+				EB5AAF3F1F385E0E00A9CBAC /* ViewController.m */,
+				EB5AAF411F385E0E00A9CBAC /* Main.storyboard */,
+				EB5AAF441F385E0E00A9CBAC /* Assets.xcassets */,
+				EB5AAF461F385E0E00A9CBAC /* LaunchScreen.storyboard */,
+				EB5AAF491F385E0E00A9CBAC /* Info.plist */,
+				EBFE7F9A1F9F28A200070E8A /* PrefixHeader.pch */,
+				EB5AAF381F385E0E00A9CBAC /* Supporting Files */,
+			);
+			path = GLMusicBox;
+			sourceTree = "<group>";
+		};
+		EB5AAF381F385E0E00A9CBAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB5AAF391F385E0E00A9CBAC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBD17F331F99A94D00BC1356 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBD17F341F99A9A900BC1356 /* GLMusicLrcLable.h */,
+				EBD17F351F99A9A900BC1356 /* GLMusicLrcLable.m */,
+				EBD17F371F99CCF700BC1356 /* GLSlider.h */,
+				EBD17F381F99CCF700BC1356 /* GLSlider.m */,
+				EBD5AB151FB59DC6000A3955 /* GLMiniMusicView.h */,
+				EBD5AB161FB59DC6000A3955 /* GLMiniMusicView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBD17F3B1F99D44100BC1356 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EBFE7F991F9F287C00070E8A /* ColorDefine.h */,
+				EBFE7F981F9F287C00070E8A /* Function.h */,
+				EBD17F3D1F99D47B00BC1356 /* UIImage+GLProcessing.h */,
+				EBD17F3C1F99D47B00BC1356 /* UIImage+GLProcessing.m */,
+				EBD0476C1FA707970079B261 /* NSString+translation.h */,
+				EBD0476D1FA707970079B261 /* NSString+translation.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EBFE7F911F9F265700070E8A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EBFE7FA11F9F2F9E00070E8A /* GLCoreMusic */,
+				EBFE7F931F9F26AE00070E8A /* Home */,
+				EBFE7F921F9F267F00070E8A /* General */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EBFE7F921F9F267F00070E8A /* General */ = {
+			isa = PBXGroup;
+			children = (
+				EBD17F331F99A94D00BC1356 /* View */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		EBFE7F931F9F26AE00070E8A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EBFE7F961F9F272300070E8A /* Model */,
+				EBFE7F951F9F271C00070E8A /* View */,
+				EBFE7F941F9F271100070E8A /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EBFE7F941F9F271100070E8A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EBFE7FA51FA180E900070E8A /* GLMusicListViewController.h */,
+				EBFE7FA61FA180E900070E8A /* GLMusicListViewController.m */,
+				EBFE7F9E1F9F2D6400070E8A /* GLMusicPlayViewController.h */,
+				EBFE7F9F1F9F2D6400070E8A /* GLMusicPlayViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EBFE7F951F9F271C00070E8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBFE7FB91FA1D13E00070E8A /* MusicLRCTableViewCell.h */,
+				EBFE7FBA1FA1D13E00070E8A /* MusicLRCTableViewCell.m */,
+				EBFE7FBB1FA1D13E00070E8A /* MusicLRCTableViewCell.xib */,
+				EB2E17B11FA327F100F753F0 /* GLMusicPlayerControlView.h */,
+				EB2E17B21FA327F100F753F0 /* GLMusicPlayerControlView.m */,
+				EB2E17B41FA32A4400F753F0 /* GLMusicPlayerControlView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBFE7F961F9F272300070E8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBFE7F971F9F274200070E8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBFE7FA81FA1BBCD00070E8A /* musiclist.plist */,
+				EBFE7FAE1FA1BDC000070E8A /* 白狐.lrc */,
+				EBFE7FAC1FA1BDC000070E8A /* 老人与海.lrc */,
+				EBFE7FAF1FA1BDC000070E8A /* 美丽的神话.lrc */,
+				EBFE7FAD1FA1BDC000070E8A /* 明天，你好.lrc */,
+				EBFE7FAA1FA1BDC000070E8A /* 爱如潮水.lrc */,
+				EBFE7FAB1FA1BDC000070E8A /* 天使的翅膀.lrc */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EBFE7FA11F9F2F9E00070E8A /* GLCoreMusic */ = {
+			isa = PBXGroup;
+			children = (
+				EBFE7FA21F9F2FD800070E8A /* GLMusicPlayer.h */,
+				EBFE7FA31F9F2FD800070E8A /* GLMusicPlayer.m */,
+				EBFE7FB61FA1C3A900070E8A /* GLMusicLRCModel.h */,
+				EBFE7FB71FA1C3A900070E8A /* GLMusicLRCModel.m */,
+			);
+			path = GLCoreMusic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB5AAF341F385E0E00A9CBAC /* GLMusicBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB5AAF4C1F385E0E00A9CBAC /* Build configuration list for PBXNativeTarget "GLMusicBox" */;
+			buildPhases = (
+				38EFE218A9CEFF02C8205BC3 /* [CP] Check Pods Manifest.lock */,
+				EB5AAF311F385E0E00A9CBAC /* Sources */,
+				EB5AAF321F385E0E00A9CBAC /* Frameworks */,
+				EB5AAF331F385E0E00A9CBAC /* Resources */,
+				633380C0D1B3A5E21ED20EC9 /* [CP] Embed Pods Frameworks */,
+				24F1C0160AB11B4B4496206F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLMusicBox;
+			productName = GLMusicBox;
+			productReference = EB5AAF351F385E0E00A9CBAC /* GLMusicBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB5AAF2D1F385E0E00A9CBAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "高磊";
+				TargetAttributes = {
+					EB5AAF341F385E0E00A9CBAC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = GJE3HPLD6B;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EB5AAF301F385E0E00A9CBAC /* Build configuration list for PBXProject "GLMusicBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB5AAF2C1F385E0E00A9CBAC;
+			productRefGroup = EB5AAF361F385E0E00A9CBAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB5AAF341F385E0E00A9CBAC /* GLMusicBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB5AAF331F385E0E00A9CBAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFE7FB01FA1BDC000070E8A /* 爱如潮水.lrc in Resources */,
+				EBFE7FB31FA1BDC000070E8A /* 明天，你好.lrc in Resources */,
+				EBFE7FB11FA1BDC000070E8A /* 天使的翅膀.lrc in Resources */,
+				EBFE7FBD1FA1D13E00070E8A /* MusicLRCTableViewCell.xib in Resources */,
+				EB5AAF481F385E0E00A9CBAC /* LaunchScreen.storyboard in Resources */,
+				EBFE7FB21FA1BDC000070E8A /* 老人与海.lrc in Resources */,
+				EBFE7FB41FA1BDC000070E8A /* 白狐.lrc in Resources */,
+				EBFE7FB51FA1BDC000070E8A /* 美丽的神话.lrc in Resources */,
+				EB5AAF451F385E0E00A9CBAC /* Assets.xcassets in Resources */,
+				EBFE7FA91FA1BBCD00070E8A /* musiclist.plist in Resources */,
+				EB2E17B51FA32A4400F753F0 /* GLMusicPlayerControlView.xib in Resources */,
+				EB5AAF431F385E0E00A9CBAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24F1C0160AB11B4B4496206F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GLMusicBox/Pods-GLMusicBox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38EFE218A9CEFF02C8205BC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		633380C0D1B3A5E21ED20EC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GLMusicBox/Pods-GLMusicBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB5AAF311F385E0E00A9CBAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5AAF401F385E0E00A9CBAC /* ViewController.m in Sources */,
+				EBD17F391F99CCF700BC1356 /* GLSlider.m in Sources */,
+				EB2E17B31FA327F100F753F0 /* GLMusicPlayerControlView.m in Sources */,
+				EBFE7FB81FA1C3A900070E8A /* GLMusicLRCModel.m in Sources */,
+				EBD5AB171FB59DC6000A3955 /* GLMiniMusicView.m in Sources */,
+				EBFE7FA41F9F2FD800070E8A /* GLMusicPlayer.m in Sources */,
+				EBD17F361F99A9A900BC1356 /* GLMusicLrcLable.m in Sources */,
+				EB5AAF3D1F385E0E00A9CBAC /* AppDelegate.m in Sources */,
+				EB5AAF3A1F385E0E00A9CBAC /* main.m in Sources */,
+				EBD0476E1FA707970079B261 /* NSString+translation.m in Sources */,
+				EBFE7FA71FA180E900070E8A /* GLMusicListViewController.m in Sources */,
+				EBFE7FBC1FA1D13E00070E8A /* MusicLRCTableViewCell.m in Sources */,
+				EBD17F3E1F99D47B00BC1356 /* UIImage+GLProcessing.m in Sources */,
+				EBFE7FA01F9F2D6400070E8A /* GLMusicPlayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB5AAF411F385E0E00A9CBAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB5AAF421F385E0E00A9CBAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB5AAF461F385E0E00A9CBAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB5AAF471F385E0E00A9CBAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB5AAF4A1F385E0E00A9CBAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB5AAF4B1F385E0E00A9CBAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB5AAF4D1F385E0E00A9CBAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6161005F47DF5419D13EBB7 /* Pods-GLMusicBox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GJE3HPLD6B;
+				GCC_PREFIX_HEADER = GLMusicBox/PrefixHeader.pch;
+				INFOPLIST_FILE = GLMusicBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gao.GLMusicBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Debug;
+		};
+		EB5AAF4E1F385E0E00A9CBAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56FDBEDC6F09A1240DA3E42C /* Pods-GLMusicBox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GJE3HPLD6B;
+				GCC_PREFIX_HEADER = GLMusicBox/PrefixHeader.pch;
+				INFOPLIST_FILE = GLMusicBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gao.GLMusicBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB5AAF301F385E0E00A9CBAC /* Build configuration list for PBXProject "GLMusicBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB5AAF4A1F385E0E00A9CBAC /* Debug */,
+				EB5AAF4B1F385E0E00A9CBAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB5AAF4C1F385E0E00A9CBAC /* Build configuration list for PBXNativeTarget "GLMusicBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB5AAF4D1F385E0E00A9CBAC /* Debug */,
+				EB5AAF4E1F385E0E00A9CBAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB5AAF2D1F385E0E00A9CBAC /* Project object */;
+}
