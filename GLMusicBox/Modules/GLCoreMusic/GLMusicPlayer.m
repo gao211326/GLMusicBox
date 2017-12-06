@@ -37,6 +37,26 @@
         player.onFailure = ^(FSAudioStreamError error, NSString *errorDescription) {
             //播放错误
             //有待解决
+            switch (error) {
+                case kFsAudioStreamErrorOpen:
+                    errorDescription = @"在线音乐，访问错误。";//@"Cannot open the audio stream";
+                    break;
+                case kFsAudioStreamErrorStreamParse:
+                    errorDescription = @"在线音乐，加载错误。";//@"Cannot read the audio stream";
+                    break;
+                case kFsAudioStreamErrorNetwork:
+                    errorDescription = @"网络错误，不能播放。";//@"Network failed: cannot play the audio stream";
+                    break;
+                case kFsAudioStreamErrorUnsupportedFormat:
+                    errorDescription = @"当前格式不支持。";//@"Unsupported format";
+                    break;
+                case kFsAudioStreamErrorStreamBouncing:
+                    errorDescription = @"网络错误，不能继续播放。";//@"Network failed: cannot get enough data to play";
+                    break;
+                default:
+                    errorDescription = @"发生未知错误";//@"Unknown error occurred";
+                    break;
+            }
         };
         player.onCompletion = ^{
             //播放完成
