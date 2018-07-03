@@ -16,6 +16,9 @@
 
 #import <AVFoundation/AVFoundation.h>
 
+/*修改Deactivating an audio session that has running I/O. All I/O should be stopped or paused prior to deactivating the audio session bug*/
+#import "AVAudioSession+AddAction.h"
+
 #if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 40000)
 #import <AudioToolbox/AudioToolbox.h>
 #import <UIKit/UIKit.h>

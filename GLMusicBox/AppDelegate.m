@@ -20,7 +20,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     AVAudioSession *session = [AVAudioSession sharedInstance];
-//    [session setActive:YES error:nil];
     [session setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:nil];
     [session setCategory:AVAudioSessionCategoryPlayback error:nil];
     
