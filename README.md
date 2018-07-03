@@ -803,3 +803,13 @@ typedef NS_ENUM(NSInteger,GLLoopState){
 
 到此为止，一个简单的播放器就差不多了，由于时间关系，可能还有些`bug`，希望大家能多多提出来，我好进行修正。下面还是附上[demo](https://github.com/gao211326/GLMusicBox)，后续我还将加一个功能，因为这两天公司有个很老的项目，有个下载问题，有点蛋疼，所以准备些一个队列下载，然后顺便加到播放器上。
 
+###### 2018-07-03 bug 修改
+针对有位朋友提出的bug
+`偶尔切换下一首时会出现 播放1s然后停止播放了，再次点击播放按钮又可以接着播放了
+下边打印这样的日志
+Deactivating an audio session that has running I/O. All I/O should be stopped or paused prior to deactivating the audio session`
+在仔细排查问题及搜寻答案后，大概找到问题所在，修改如下
+![bug2.png](https://upload-images.jianshu.io/upload_images/2525768-408c1cd211911110.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+在`FreeStreamer`中增加了一个`category`来强制修改返回状态，因为`FreeStreamer`中会去修改该状态。所以将该`category`引入到`FSAudioStream`类中
+![修改.jpg](https://upload-images.jianshu.io/upload_images/2525768-f489f4d22f8fe3eb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
